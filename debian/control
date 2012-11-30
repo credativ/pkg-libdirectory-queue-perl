@@ -1,0 +1,26 @@
+Source: libdirectory-queue-perl
+Section: perl
+Priority: optional
+Maintainer: Alexander Wirt <formorer@debian.org>
+Build-Depends: debhelper (>= 8)
+Build-Depends-Indep: perl
+Standards-Version: 3.9.3
+Homepage: http://search.cpan.org/dist/Directory-Queue/
+
+Package: libdirectory-queue-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: object oriented interface to a directory based queue
+ The goal of this module is to offer a queue system using the underlying
+ filesystem for storage, security and to prevent race conditions via atomic
+ operations. It focuses on simplicity, robustness and scalability.
+ .
+ Directory::Queue allows multiple concurrent readers and writers to interact
+ with the same queue. A Python implementation of the same algorithms is
+ available at http://pypi.python.org/pypi/dirq/ so readers and writers can be
+ written in different programming languages.
+ .
+ There is no knowledge of priority within a queue. If multiple priorities are
+ needed, multiple queues should be used.
+ .
+ This description was automagically extracted from the module by dh-make-perl.
